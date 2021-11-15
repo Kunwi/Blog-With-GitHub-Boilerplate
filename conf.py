@@ -30,14 +30,14 @@ key_words = ['Maverick', 'Kunwi', '游记', '评测','随感']
 language = 'zh-CN'
 external_links = [
     {
-        "name": "steam游戏评测",
+        "name": "Steam",
         "url": "https://steamcommunity.com/profiles/76561198345862576/recommended/",
-        "brief": ""
+        "brief": "游戏评测"
     },
     {
         "name": "goodreads",
         "url": " https://www.goodreads.com/kunwi",
-        "brief": "我的读书记录"
+        "brief": "读书记录"
     },
     {
         "name": "Maverick",
