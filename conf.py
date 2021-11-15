@@ -15,29 +15,34 @@ template = {
 }
 enable_jsdelivr = {
     "enabled": True,
-    "repo": "Kunwi/Blog-With-GitHub-Boilerplate@gh-pages"
+    "repo": "Kunwi/Myblog@gh-pages"
 }
 
 # 站点设置
 site_name = "Kunwi's Blog"
 site_logo = "${static_prefix}logo.png"
-site_build_date = "2019-12-18T16:51+08:00"
+site_build_date = "2021-11-16T00:52+08:00"
 author = "Kunwi Teh"
-email = "hi@imalan.cn"
-author_homepage = "https://www.imalan.cn"
+email = "seesgyy@gmail.com"
+author_homepage = "/"
 description = "Nothing in life is to be feared, it is only to be understood."
-key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
+key_words = ['Maverick', 'Kunwi', '游记', '评测'，'随感']
 language = 'zh-CN'
 external_links = [
+    {
+        "name": "steam游戏评测",
+        "url": "https://steamcommunity.com/profiles/76561198345862576/recommended/",
+        "brief": ""
+    },
+    {
+        "name": "goodreads",
+        "url": " https://www.goodreads.com/kunwi",
+        "brief": "我的读书记录"
+    },
     {
         "name": "Maverick",
         "url": "https://github.com/AlanDecode/Maverick",
         "brief": "🏄‍ Go My Own Way."
-    },
-    {
-        "name": "三無計劃",
-        "url": "https://www.imalan.cn",
-        "brief": "熊猫小A的主页。"
     }
 ]
 nav = [
@@ -60,19 +65,9 @@ nav = [
 
 social_links = [
     {
-        "name": "Twitter",
-        "url": "https://twitter.com/AlanDecode",
-        "icon": "gi gi-twitter"
-    },
-    {
         "name": "GitHub",
-        "url": "https://github.com/AlanDecode",
+        "url": "https://github.com/Kunwi",
         "icon": "gi gi-github"
-    },
-    {
-        "name": "Weibo",
-        "url": "https://weibo.com/5245109677/",
-        "icon": "gi gi-weibo"
     }
 ]
 
