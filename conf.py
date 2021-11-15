@@ -8,12 +8,7 @@ source_dir = "../src/"
 build_dir = "../dist/"
 index_page_size = 10
 archives_page_size = 20
-template = {
-    "name": "Kepler",
-    "type": "git",
-    "url": "https://github.com/AlanDecode/Maverick-Theme-Kepler.git",
-    "branch": "latest"
-}
+template = "Galileo"
 enable_jsdelivr = {
     "enabled": True,
     "repo": "Kunwi/Myblog@gh-pages"
