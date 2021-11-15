@@ -26,7 +26,7 @@ author = "Kunwi Teh"
 email = "seesgyy@gmail.com"
 author_homepage = "/"
 description = "Nothing in life is to be feared, it is only to be understood."
-key_words = ['Maverick', 'Kunwi', '游记', '评测'，'随感']
+key_words = ['Maverick', 'Kunwi', '游记', '评测','随感']
 language = 'zh-CN'
 external_links = [
     {
