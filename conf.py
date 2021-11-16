@@ -34,11 +34,6 @@ external_links = [
         "name": "goodreads",
         "url": " https://www.goodreads.com/kunwi",
         "brief": "读书记录"
-    },
-    {
-        "name": "Maverick",
-        "url": "https://github.com/AlanDecode/Maverick",
-        "brief": "🏄‍ Go My Own Way."
     }
 ]
 nav = [
