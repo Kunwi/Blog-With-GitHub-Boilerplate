@@ -2,9 +2,9 @@
 layout: page
 title: 关于
 slug: about
-date: 2017/06/28 17:26:00
+date: 2021/11/17 16:15:00
 status: publish
-author: AlanDecode
+author: Kunwi
 categories: 
   - Maverick
   - Dev
@@ -17,6 +17,6 @@ tags:
 
 ## Contact
 
-Email: hi#imalan.cn (replace # with @)
+Email: seesgyy@gmail.com
 
-Telegram：[AlanDecode](https://t.me/alandecode)
+Telegram：[Kunwi](https://t.me/Kunwii)
