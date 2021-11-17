@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 泰山曲阜游记
-slug: 游记
+slug: Mount-Tai
 date: 2021-03-03 16:50
 status: publish
 author: Kunwi
 categories: 
-  - Maverick
-tags:
   - 游记
+tags:
   - 山东
 ---
 
