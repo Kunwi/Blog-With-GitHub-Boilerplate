@@ -26,6 +26,11 @@ key_words = ['Maverick', 'Kunwi', '游记', '评测','随感']
 language = 'zh-CN'
 external_links = [
     {
+        "name": "TapTap",
+        "url": "https://www.taptap.com/user/5704888",
+        "brief": "游戏评测"
+    },
+    {
         "name": "Steam",
         "url": "https://steamcommunity.com/profiles/76561198345862576/recommended/",
         "brief": "游戏评测"
