@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/Myblog/</id><title>Kunwi's Blog</title><updated>2022-05-06T07:21:28.511224+08:06</updated><author><name>Kunwi Teh</name><email>seesgyy@gmail.com</email></author><link href="/Myblog/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/logo.png</logo><subtitle>Nothing in life is to be feared, it is only to be understood.</subtitle><entry><id>/Myblog/archives/Mount-Tai/</id><title>泰山曲阜游记</title><updated>2022-05-06T07:21:28.511345+00:00</updated><author><name>Kunwi</name><email>seesgyy@gmail.com</email><uri>/</uri></author><content>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/Myblog/</id><title>Kunwi's Blog</title><updated>2022-05-06T07:27:14.629789+08:06</updated><author><name>Kunwi Teh</name><email>seesgyy@gmail.com</email></author><link href="/Myblog/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/logo.png</logo><subtitle>Nothing in life is to be feared, it is only to be understood.</subtitle><entry><id>/Myblog/archives/Mount-Tai/</id><title>泰山曲阜游记</title><updated>2022-05-06T07:27:14.629940+00:00</updated><author><name>Kunwi</name><email>seesgyy@gmail.com</email><uri>/</uri></author><content>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
 （你能找到五岳独尊吗）&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;五岳归来不看山，黄山归来不看岳&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -40,22 +40,18 @@
 由于孔林太大，导游只带着坐电瓶车逛了一圈才下来步行，感觉比前两座还要走马观花。结果就这样带着轻浮的印象离开了曲阜。
 &lt;figure style="flex: 45.764462809917354" &gt;&lt;img loading="lazy" width="443" height="484" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/ba4cd830e670e686ce8dc781357a8582.jpg" /&gt;&lt;figcaption&gt;连禁止烟火都被做成了墓碑模样&lt;/figcaption&gt;&lt;/figure&gt;
 由于行程匆忙，山东之旅就在走马观花中匆匆结束了。在此要多谢泰安友人范氏的远程倾情介绍，给我的游览添了很多趣味。虽然范氏推荐的驴肉火烧没有吃到，奈何桥、冯玉祥墓、泰安老火车站以及壕气的政府也无缘得见了。下次有机会再来拜访。&lt;del&gt;下次一定&lt;/del&gt;&lt;/p&gt;
-</content><link href="/Myblog/archives/Mount-Tai/" rel="alternate"/><published>2021-03-03T16:50:00+08:06</published></entry><entry><id>/Myblog/archives/gitbook/</id><title>Gitbook制作简明教程</title><updated>2022-05-06T07:21:28.511288+00:00</updated><author><name>Kunwi</name><email>seesgyy@gmail.com</email><uri>/</uri></author><content>&lt;p&gt;本教程主要基于以下教程：&lt;a href="https://gitbook.curiouser.top/origin/gitbook-%E7%AE%80%E4%BB%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"&gt;GitBook简介安装配置&lt;/a&gt;，&lt;/p&gt;
+</content><link href="/Myblog/archives/Mount-Tai/" rel="alternate"/><published>2021-03-03T16:50:00+08:06</published></entry><entry><id>/Myblog/archives/gitbook/</id><title>Gitbook制作简明教程</title><updated>2022-05-06T07:27:14.629872+00:00</updated><author><name>Kunwi</name><email>seesgyy@gmail.com</email><uri>/</uri></author><content>&lt;p&gt;本教程主要基于以下教程：&lt;a href="https://gitbook.curiouser.top/origin/gitbook-%E7%AE%80%E4%BB%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"&gt;GitBook简介安装配置&lt;/a&gt;，&lt;/p&gt;
 &lt;h1&gt;环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, ph-pages）&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;本教程使用环境：&lt;/strong&gt;64位win10 系统；&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装gitbook的使用环境Node.js：&lt;/strong&gt;gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装使用过程中可能会出现问题，需要额外的步骤解决。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装电子书制作软件gitbook cli：&lt;/strong&gt;在cmd或Git Bash等命令行程序中输入以下命令：&lt;code&gt;npm install gitbook-cli -g&lt;/code&gt;
-新版Node.js可能会遇到gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287 cb.apply is not a function 问题，需要找到对应文件polyfills.js，将以下几行注释掉即可，效果如下：&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1、  本教程使用环境：&lt;/strong&gt;64位win10 系统；&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、  安装gitbook的使用环境Node.js：&lt;/strong&gt;gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装使用过程中可能会出现问题，需要额外的步骤解决。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3、  安装电子书制作软件gitbook cli：&lt;/strong&gt;在cmd或Git Bash等命令行程序中输入以下命令：&lt;code&gt;npm install gitbook-cli -g&lt;/code&gt;
+新版Node.js可能会遇到gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287 cb.apply is not a function 问题，需要找到对应文件polyfills.js，将以下几行注释掉即可，效果如下：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// fs.stat = statFix(fs.stat)
 // fs.fstat = statFix(fs.fstat)
 // fs.lstat = statFix(fs.lstat)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href="https://www.jianshu.com/p/8aba9fea0fe3"&gt;来源&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;安装Writage &amp;amp; 编写宏文件转换Word文件为markdown格式（可选）：&lt;/strong&gt;由于使用本教程采用的原书使用word编写，故使用word转markdown软件Writage，安装后直接集成在word加载项内，将word文件另存为md文件即可完成转换。由于Writage不支持批注形式的注释，故使用VBA编写宏文件将批注批量转为脚注，代码如下：&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;4、 安装Writage &amp;amp; 编写宏文件转换Word文件为markdown格式（可选）：&lt;/strong&gt;由于使用本教程采用的原书使用word编写，故使用word转markdown软件Writage，安装后直接集成在word加载项内，将word文件另存为md文件即可完成转换。由于Writage不支持批注形式的注释，故使用VBA编写宏文件将批注批量转为脚注，代码如下：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;Sub 批转脚()
 Dim xComm As Comment
@@ -72,18 +68,14 @@ Application.ScreenUpdating = True
 End Sub&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;a href="https://www.zhihu.com/question/320555426/answer/2292364679"&gt;来源&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;另外word转md软件还有命令行软件Pandoc，其转换的文件格式比Writage多样，但是实际体验下来word转markdown的实际转换效果不如Writage。&lt;a href="https://zhuanlan.zhihu.com/p/30891168"&gt;来源&lt;/a&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;安装可视化markdown编辑器Vscode：&lt;/strong&gt;安装后在软件内置的应用商店安装插件：markdown all in one、markdown preview enhanced、markdown preview github styling。另外在设置中搜索“security.workspace.trust”将受限模式禁用（如不禁用则需额外选择信任窗口以启用插件），&lt;a href="https://blog.csdn.net/weixin_45755666/article/details/117877321"&gt;来源&lt;/a&gt;。另外还有typora（收费）可供使用，&lt;a href="https://zhuanlan.zhihu.com/p/103348449"&gt;来源&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装Git Bash将本地代码推送至Github：&lt;/strong&gt;安装地址&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;安装gh-pages插件推送静态HTML文件&lt;/strong&gt;：安装命令如下：
+&lt;p&gt;&lt;strong&gt;5、  安装可视化markdown编辑器Vscode：&lt;/strong&gt;安装后在软件内置的应用商店安装插件：markdown all in one、markdown preview enhanced、markdown preview github styling。另外在设置中搜索“security.workspace.trust”将受限模式禁用（如不禁用则需额外选择信任窗口以启用插件），&lt;a href="https://blog.csdn.net/weixin_45755666/article/details/117877321"&gt;来源&lt;/a&gt;。另外还有typora（收费）可供使用，&lt;a href="https://zhuanlan.zhihu.com/p/103348449"&gt;来源&lt;/a&gt;。
+&lt;strong&gt;6、  安装Git Bash将本地代码推送至Github：&lt;/strong&gt;安装地址
+&lt;strong&gt;7、  安装gh-pages插件推送静态HTML文件&lt;/strong&gt;：安装命令如下：
 &lt;code&gt;npm install gh-pages@3.0.0 --save&lt;/code&gt;
-gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” argument must be of type string.错误，暂未查到解决办法。&lt;/li&gt;
-&lt;/ol&gt;
+gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” argument must be of type string.错误，暂未查到解决办法。&lt;/p&gt;
 &lt;h1&gt;开始建书：&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;将word转换为markdown格式：&lt;/strong&gt;运行宏将批注转为脚注，再用Writage将word转为markdown格式。转换后的表格格式需再调整&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;编写SUMMARY.md文件：&lt;/strong&gt;建议放于user/用户名/书名 路径下，名称使用英文。其格式如下：&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;1、  将word转换为markdown格式：&lt;/strong&gt;运行宏将批注转为脚注，再用Writage将word转为markdown格式。转换后的表格格式需再调整&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、  编写SUMMARY.md文件：&lt;/strong&gt;建议放于user/用户名/书名 路径下，名称使用英文。其格式如下：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# Summary
 
@@ -93,12 +85,10 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
     * [第二節    **](chapter1/section02.md)
     * [第三節    **](chapter1/section03.md)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其中[]内为章节名，()内为章节文件相对路径。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;生成初始文件：&lt;/strong&gt;在对应书籍目录下输入以下命令：&lt;code&gt;gitbook init&lt;/code&gt;
-可在命令后加上路径初始化到指定目录。完成后可见每章节自动生成的空白md文件&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;编写书本：&lt;/strong&gt;将第1步转换后的md文件内容按章节逐一复制到第3步的md文件中。在Vscode编辑器中右键打开侧边栏，可实时预览md代码的显示效果，并依此进行相应调整。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;编写book.json文件（可选）：&lt;/strong&gt;gitbook 在编译书籍的时候会读取书籍源码顶层目录中的book.json文件。如对格式不熟悉可于&lt;a href="https://jsonlint.com/"&gt;校对网站&lt;/a&gt;校验，也可参考&lt;a href="https://janicezhw.github.io/gitbook/startusegitbook/configInfo/bookjson.html"&gt;模板&lt;/a&gt;如下：&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;3、  生成初始文件：&lt;/strong&gt;在对应书籍目录下输入以下命令：&lt;code&gt;gitbook init&lt;/code&gt;
+可在命令后加上路径初始化到指定目录。完成后可见每章节自动生成的空白md文件&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4、  编写书本：&lt;/strong&gt;将第1步转换后的md文件内容按章节逐一复制到第3步的md文件中。在Vscode编辑器中右键打开侧边栏，可实时预览md代码的显示效果，并依此进行相应调整。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5、  编写book.json文件（可选）：&lt;/strong&gt;gitbook 在编译书籍的时候会读取书籍源码顶层目录中的book.json文件。如对格式不熟悉可于&lt;a href="https://jsonlint.com/"&gt;校对网站&lt;/a&gt;校验，也可参考&lt;a href="https://janicezhw.github.io/gitbook/startusegitbook/configInfo/bookjson.html"&gt;模板&lt;/a&gt;如下：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;{
        // Folders to use for output
@@ -203,20 +193,16 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
     ]
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其中back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见&lt;a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html"&gt;来源&lt;/a&gt;。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;构建gitbook书籍静态HTML资源：&lt;/strong&gt;首先在对应书籍目录下输入以下命令：&lt;code&gt;gitbook install&lt;/code&gt;安装插件样式资源，其次输入以下命令：&lt;code&gt;gitbook build&lt;/code&gt;,可见书籍的文件夹中生成一个 _book 的文件夹, 里面有生成的静态HTML资源。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;代码托管到Github：&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）&lt;/li&gt;
-&lt;li&gt;在Git Bash输入以下代码：
+&lt;p&gt;&lt;strong&gt;6、  构建gitbook书籍静态HTML资源：&lt;/strong&gt;首先在对应书籍目录下输入以下命令：&lt;code&gt;gitbook install&lt;/code&gt;安装插件样式资源，其次输入以下命令：&lt;code&gt;gitbook build&lt;/code&gt;,可见书籍的文件夹中生成一个 _book 的文件夹, 里面有生成的静态HTML资源。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7、  代码托管到Github：&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
+2.  在Git Bash输入以下代码：
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;pre&gt;&lt;code&gt;git config --global user.name "你的GitHub用户名"
 git config --global user.email "你的GitHub邮箱"
 git config --global credential.helper store&lt;/code&gt;&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
 &lt;p&gt;其次复制仓库的https地址，在Git Bash输入以下代码将本地文件推送至仓库的master分支：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git init
@@ -232,9 +218,7 @@ git push origin master&lt;/code&gt;&lt;/pre&gt;
 git add .
 git commit -m "添加修改"
 git push&lt;/code&gt;&lt;/pre&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;代码发布至gh-pages：&lt;/strong&gt;在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：&lt;code&gt;gh-pages -d _book&lt;/code&gt;，在Github中设置GitHub Page Source时指定gh-pages分支即可。&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;8、  代码发布至gh-pages：&lt;/strong&gt;在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：&lt;code&gt;gh-pages -d _book&lt;/code&gt;，在Github中设置GitHub Page Source时指定gh-pages分支即可。&lt;/p&gt;
 &lt;h2&gt;存在问题&lt;/h2&gt;
 &lt;p&gt;表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来&lt;/p&gt;
 </content><link href="/Myblog/archives/gitbook/" rel="alternate"/><published>2022-05-06T15:07:00+08:06</published></entry></feed>
