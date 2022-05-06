@@ -53,7 +53,9 @@ End Sub
 另外word转md软件还有命令行软件Pandoc，其转换的文件格式比Writage多样，但是实际体验下来word转markdown的实际转换效果不如Writage。[来源](https://zhuanlan.zhihu.com/p/30891168)
 
 **5、  安装可视化markdown编辑器Vscode：**安装后在软件内置的应用商店安装插件：markdown all in one、markdown preview enhanced、markdown preview github styling。另外在设置中搜索“security.workspace.trust”将受限模式禁用（如不禁用则需额外选择信任窗口以启用插件），[来源](https://blog.csdn.net/weixin_45755666/article/details/117877321)。另外还有typora（收费）可供使用，[来源](https://zhuanlan.zhihu.com/p/103348449)。
-**6、  安装Git Bash将本地代码推送至Github：**安装地址
+
+**6、  安装Git Bash将本地代码推送至Github：**[安装地址](https://git-scm.com/downloads)
+
 **7、  安装gh-pages插件推送静态HTML文件**：安装命令如下：
 `npm install gh-pages@3.0.0 --save`
 gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” argument must be of type string.错误，暂未查到解决办法。
