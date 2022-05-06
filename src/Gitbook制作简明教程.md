@@ -60,6 +60,7 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 
 1.  **将word转换为markdown格式：**运行宏将批注转为脚注，再用Writage将word转为markdown格式。转换后的表格格式需再调整
 2.  **编写SUMMARY.md文件：**建议放于user/用户名/书名 路径下，名称使用英文。其格式如下：
+
 ```
 # Summary
 
