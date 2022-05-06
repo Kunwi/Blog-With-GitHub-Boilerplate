@@ -191,13 +191,13 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 }
 ```
 
-其中back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见[来源](https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html)。
+其中back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见[来源](https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html)。另外利用table-cell-merge可实现合并单元格：在单元格中填入>表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见[项目说明](https://www.npmjs.com/package/gitbook-plugin-table-cell-merge)。
 
 **6、  构建gitbook书籍静态HTML资源：**首先在对应书籍目录下输入以下命令：`gitbook install`安装插件样式资源，其次输入以下命令：`gitbook build`,可见书籍的文件夹中生成一个 \_book 的文件夹, 里面有生成的静态HTML资源。
 
 **7、  代码托管到Github：**
-    1.  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
-    2.  在Git Bash输入以下代码：
+1.  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
+2.  在Git Bash输入以下代码：
 ```
 git config --global user.name "你的GitHub用户名"
 git config --global user.email "你的GitHub邮箱"
@@ -228,4 +228,23 @@ git push
 
 ##存在问题
 
-表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来
+- 表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来
+
+- 在使用table-cell-merge过程中发现处于表格右下角的单元格与左方单元格无法合并。经检验发现在该单元格分隔符"|"（也是表格的最后一个分隔符）后多加一个分隔符"|"即可解决问题
+
+例：原编码：
+
+```
+| a | b |
+|---|---|
+| 1 | 2 |
+| 4 |   |
+```
+改为如下形式：
+
+```
+| a | b |
+|---|---|
+| 1 | 2 |
+| 4 |   ||
+```
