@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Fri, 06 May 2022 07:10:21 +0806</lastBuildDate><pubDate>Fri, 06 May 2022 07:10:21 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Fri, 06 May 2022 07:21:28 +0806</lastBuildDate><pubDate>Fri, 06 May 2022 07:21:28 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
 （你能找到五岳独尊吗）&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;五岳归来不看山，黄山归来不看岳&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -82,20 +82,16 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 &lt;h1&gt;开始建书：&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;将word转换为markdown格式：&lt;/strong&gt;运行宏将批注转为脚注，再用Writage将word转为markdown格式。转换后的表格格式需再调整&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;编写SUMMARY.md文件：&lt;/strong&gt;建议放于user/用户名/书名 路径下，名称使用英文。其格式如下：
-```
-# Summary&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;编写SUMMARY.md文件：&lt;/strong&gt;建议放于user/用户名/书名 路径下，名称使用英文。其格式如下：&lt;/li&gt;
 &lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="README.md"&gt;前言&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="chapter1.md"&gt;第一章 **&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href="chapter1/section01.md"&gt;第一節    **&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="chapter1/section02.md"&gt;第二節    **&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="chapter1/section03.md"&gt;第三節    **&lt;/a&gt;
-```&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# Summary
+
+* [前言](README.md)
+* [第一章 **](chapter1.md)
+    * [第一節    **](chapter1/section01.md)
+    * [第二節    **](chapter1/section02.md)
+    * [第三節    **](chapter1/section03.md)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其中[]内为章节名，()内为章节文件相对路径。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;生成初始文件：&lt;/strong&gt;在对应书籍目录下输入以下命令：&lt;code&gt;gitbook init&lt;/code&gt;
