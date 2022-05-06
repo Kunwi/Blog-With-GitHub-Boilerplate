@@ -1,8 +1,19 @@
-# Gitbook制作简明教程
+---
+layout: post
+title: Gitbook制作简明教程
+slug: gitbook
+date: 2022-05-06 15:07
+status: publish
+author: Kunwi
+categories: 
+  - 教程
+tags:
+  - gitbook
+---
 
 本教程主要基于以下教程：[GitBook简介安装配置](https://gitbook.curiouser.top/origin/gitbook-%E7%AE%80%E4%BB%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html)，
 
-##环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, ph-pages）
+#环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, ph-pages）
 
 1.  **本教程使用环境：**64位win10 系统；
 2.  **安装gitbook的使用环境Node.js：**gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装使用过程中可能会出现问题，需要额外的步骤解决。
@@ -45,7 +56,7 @@ End Sub
 `npm install gh-pages@3.0.0 --save`
 gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” argument must be of type string.错误，暂未查到解决办法。
 
-##开始建书：
+#开始建书：
 
 1.  **将word转换为markdown格式：**运行宏将批注转为脚注，再用Writage将word转为markdown格式。转换后的表格格式需再调整
 2.  **编写SUMMARY.md文件：**建议放于user/用户名/书名 路径下，名称使用英文。其格式如下：
@@ -196,9 +207,16 @@ git push origin master
 ```
 
 如失败，应确认登录状态，尝试能否克隆仓库，也可尝试[创建ssh key](https://blog.csdn.net/helllochun/article/details/48802473)（Permission denied (publickey)），以及换个网络环境。
+后期修改代码内容可用以下命令推送修改：
+```
+# cd 到仓库文件夹后
 
-8.  **代码发布至gh-pages：**在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：`gh-pages -d _book`
-在Github中设置GitHub Page Source时指定gh-pages分支即可。
+git add .
+git commit -m "添加修改"
+git push
+```
+
+8.  **代码发布至gh-pages：**在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：`gh-pages -d _book`，在Github中设置GitHub Page Source时指定gh-pages分支即可。
 
 ##存在问题
 
