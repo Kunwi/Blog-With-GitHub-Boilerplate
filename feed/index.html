@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Fri, 06 May 2022 07:33:28 +0806</lastBuildDate><pubDate>Fri, 06 May 2022 07:33:28 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Fri, 06 May 2022 19:06:53 +0806</lastBuildDate><pubDate>Fri, 06 May 2022 19:06:53 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
 （你能找到五岳独尊吗）&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;五岳归来不看山，黄山归来不看岳&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -192,17 +192,17 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
         "lightbox"
     ]
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;其中back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见&lt;a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html"&gt;来源&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;其中back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见&lt;a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html"&gt;来源&lt;/a&gt;。另外利用table-cell-merge可实现合并单元格：在单元格中填入&amp;gt;表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见&lt;a href="https://www.npmjs.com/package/gitbook-plugin-table-cell-merge"&gt;项目说明&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;6、  构建gitbook书籍静态HTML资源：&lt;/strong&gt;首先在对应书籍目录下输入以下命令：&lt;code&gt;gitbook install&lt;/code&gt;安装插件样式资源，其次输入以下命令：&lt;code&gt;gitbook build&lt;/code&gt;,可见书籍的文件夹中生成一个 _book 的文件夹, 里面有生成的静态HTML资源。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;7、  代码托管到Github：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1.  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
-2.  在Git Bash输入以下代码：
-&lt;/code&gt;&lt;/pre&gt;
-
+&lt;ol&gt;
+&lt;li&gt;在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）&lt;/li&gt;
+&lt;li&gt;在Git Bash输入以下代码：
 &lt;pre&gt;&lt;code&gt;git config --global user.name "你的GitHub用户名"
 git config --global user.email "你的GitHub邮箱"
 git config --global credential.helper store&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;p&gt;其次复制仓库的https地址，在Git Bash输入以下代码将本地文件推送至仓库的master分支：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;git init
@@ -220,5 +220,22 @@ git commit -m "添加修改"
 git push&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;8、  代码发布至gh-pages：&lt;/strong&gt;在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：&lt;code&gt;gh-pages -d _book&lt;/code&gt;，在Github中设置GitHub Page Source时指定gh-pages分支即可。&lt;/p&gt;
 &lt;h2&gt;存在问题&lt;/h2&gt;
-&lt;p&gt;表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在使用table-cell-merge过程中发现处于表格右下角的单元格与左方单元格无法合并。经检验发现在该单元格分隔符"|"（也是表格的最后一个分隔符）后多加一个分隔符"|"即可解决问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例：原编码：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| a | b |
+|---|---|
+| 1 | 2 |
+| 4 |   |&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;改为如下形式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| a | b |
+|---|---|
+| 1 | 2 |
+| 4 |   ||&lt;/code&gt;&lt;/pre&gt;
 </description><author>seesgyy@gmail.com (Kunwi)</author><guid isPermaLink="true">/Myblog/archives/gitbook/</guid><pubDate>Fri, 06 May 2022 15:07:00 +0806</pubDate></item></channel></rss>
