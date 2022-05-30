@@ -17,10 +17,10 @@ tags:
 
 **1、  本教程使用环境：**64位win10 系统；
 
-**2、  安装gitbook的使用环境Node.js：**gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装使用过程中可能会出现问题，需要额外的步骤解决。
+**2、  安装gitbook的使用环境Node.js：**gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装以及后续使用过程中可能会出现问题，需要额外的步骤解决，并不推荐。
 
 **3、  安装电子书制作软件gitbook cli：**在cmd或Git Bash等命令行程序中输入以下命令：`npm install gitbook-cli -g`
-新版Node.js可能会遇到gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287 cb.apply is not a function 问题，需要找到对应文件polyfills.js，将以下几行注释掉即可，效果如下：
+新版Node.js如遇到gitbook-cli/node_modules/npm/node_modules/graceful-fs/polyfills.js:287 cb.apply is not a function 问题，需要找到对应文件polyfills.js，将以下几行注释掉即可，效果如下：
 
 ```
 // fs.stat = statFix(fs.stat)
@@ -30,7 +30,7 @@ tags:
 
 [来源](https://www.jianshu.com/p/8aba9fea0fe3)
 
-**4、 安装Writage & 编写宏文件转换Word文件为markdown格式（可选）：**由于使用本教程采用的原书使用word编写，故使用word转markdown软件Writage，安装后直接集成在word加载项内，将word文件另存为md文件即可完成转换。由于Writage不支持批注形式的注释，故使用VBA编写宏文件将批注批量转为脚注，代码如下：
+**4、 安装Writage & 编写宏文件转换Word文件为markdown格式（可选）：**由于使用本教程采用的原书使用word编写，故使用word转markdown软件Writage（收费，可试用14天），安装后直接集成在word加载项内，将word文件另存为md文件即可完成转换。由于Writage不支持批注形式的注释，故使用VBA编写宏文件将批注批量转为脚注，代码如下：
 
 ```
 Sub 批转脚()
@@ -191,13 +191,37 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 }
 ```
 
-其中back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见[来源](https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html)。另外利用table-cell-merge可实现合并单元格：在单元格中填入>表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见[项目说明](https://www.npmjs.com/package/gitbook-plugin-table-cell-merge)。
+可能有用的插件：back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见[来源](https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html)。table-cell-merge可实现合并单元格：在单元格中填入>表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见[项目说明](https://www.npmjs.com/package/gitbook-plugin-table-cell-merge)。url-embed可嵌入动态内容，如地图，详见[来源](https://github.com/basilvetas/gitbook-plugin-url-embed)。
 
 **6、  构建gitbook书籍静态HTML资源：**首先在对应书籍目录下输入以下命令：`gitbook install`安装插件样式资源，其次输入以下命令：`gitbook build`,可见书籍的文件夹中生成一个 \_book 的文件夹, 里面有生成的静态HTML资源。
 
 **7、  代码托管到Github：**
-1.  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
-2.  在Git Bash输入以下代码：
+a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
+
+b  构建.gitignore文件，忽略无需上传的文件。gitbook统一示例如下，可根据需求更改。
+```
+# Node rules:
+## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+## Dependency directory
+## Commenting this out is preferred by some people, see
+## https://docs.npmjs.com/misc/faq#should-i-check-my-node_modules-folder-into-git
+node_modules
+
+# Book build output
+_book
+
+# eBook build output
+*.epub
+*.mobi
+*.pdf
+```
+详见[来源](https://github.com/github/gitignore/blob/main/GitBook.gitignore)
+
+对于.gitignore的详细用法介绍可参见[来源](https://blog.csdn.net/wnvalentin/article/details/105448739)
+
+c  在Git Bash输入以下代码：
 ```
 git config --global user.name "你的GitHub用户名"
 git config --global user.email "你的GitHub邮箱"
@@ -248,3 +272,5 @@ git push
 | 1 | 2 |
 | 4 |   ||
 ```
+
+- book.json文件修改"plugins":[]参数时需注意，若修改前后插件数量不变，需保证排在第一行的插件有变化。否则执行gitbook install时系统会无法识别插件变化，无法安装。因此如有新增插件建议将其写在第一行。
