@@ -252,7 +252,7 @@ git push
 
 ##存在问题
 
-- 表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来
+- 表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来。 使用ideamean修改的版本即可解决，使用方法：修改book.json的plugins，增加数组项："auto-scroll-table@git+https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git" ，参见[来源](https://github.com/ideamean/gitbook-plugin-auto-scroll-table/blob/master/README.MD)
 
 - 在使用table-cell-merge过程中发现处于表格右下角的单元格与左方单元格无法合并。经检验发现在该单元格分隔符"|"（也是表格的最后一个分隔符）后多加一个分隔符"|"即可解决问题
 
