@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/89cf7ee1fcc735f93613c5d4dadc46a4.json"
+            api: "https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/dea6c2cf700b35a93c7c654a1acd3d13.json"
         }
     </script>
     
@@ -279,7 +279,7 @@ git push</code></pre>
 <p><strong>8、  代码发布至gh-pages：</strong>在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：<code>gh-pages -d _book</code>，在Github中设置GitHub Page Source时指定gh-pages分支即可。</p>
 <h2>存在问题</h2>
 <ul>
-<li><p>表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来</p>
+<li><p>表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来。 使用ideamean修改的版本即可解决，使用方法：修改book.json的plugins，增加数组项："auto-scroll-table@git+<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git">https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git</a>" ，参见<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table/blob/master/README.MD">来源</a></p>
 </li>
 <li><p>在使用table-cell-merge过程中发现处于表格右下角的单元格与左方单元格无法合并。经检验发现在该单元格分隔符"|"（也是表格的最后一个分隔符）后多加一个分隔符"|"即可解决问题</p>
 </li>
