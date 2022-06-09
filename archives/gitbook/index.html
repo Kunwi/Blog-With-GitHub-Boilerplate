@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/dea6c2cf700b35a93c7c654a1acd3d13.json"
+            api: "https://cdn.jsdelivr.net/gh/Kunwi/Myblog@gh-pages/0545ede5413e3e1f04ebbd2a744a4942.json"
         }
     </script>
     
@@ -232,7 +232,7 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
         "lightbox"
     ]
 }</code></pre>
-<p>可能有用的插件：back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条）、lightbox为单击查看图片。详见<a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html">来源</a>。table-cell-merge可实现合并单元格：在单元格中填入&gt;表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见<a href="https://www.npmjs.com/package/gitbook-plugin-table-cell-merge">项目说明</a>。url-embed可嵌入动态内容，如地图，详见<a href="https://github.com/basilvetas/gitbook-plugin-url-embed">来源</a>。</p>
+<p>可能有用的插件：back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条，解决方法见文末存在问题一节。）、lightbox为单击查看图片（实际体验不佳，图片显示在悬浮窗口中但没有放大。）。详见<a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html">来源</a>。table-cell-merge可实现合并单元格：在单元格中填入&gt;表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见<a href="https://www.npmjs.com/package/gitbook-plugin-table-cell-merge">项目说明</a>。url-embed可嵌入动态内容，如地图，详见<a href="https://github.com/basilvetas/gitbook-plugin-url-embed">来源</a>。</p>
 <p><strong>6、  构建gitbook书籍静态HTML资源：</strong>首先在对应书籍目录下输入以下命令：<code>gitbook install</code>安装插件样式资源，其次输入以下命令：<code>gitbook build</code>,可见书籍的文件夹中生成一个 _book 的文件夹, 里面有生成的静态HTML资源。</p>
 <p><strong>7、  代码托管到Github：</strong>
 a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）</p>
@@ -279,7 +279,7 @@ git push</code></pre>
 <p><strong>8、  代码发布至gh-pages：</strong>在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：<code>gh-pages -d _book</code>，在Github中设置GitHub Page Source时指定gh-pages分支即可。</p>
 <h2>存在问题</h2>
 <ul>
-<li><p>表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来。 使用ideamean修改的版本即可解决，使用方法：修改book.json的plugins，增加数组项："auto-scroll-table@git+<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git">https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git</a>" ，参见<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table/blob/master/README.MD">来源</a></p>
+<li><p>表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来。 使用ideamean修改的版本即可解决，使用方法：修改book.json的plugins，将原数组项"auto-scroll-table"更改为"auto-scroll-table@git+<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git">https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git</a>" ，参见<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table/blob/master/README.MD">来源</a></p>
 </li>
 <li><p>在使用table-cell-merge过程中发现处于表格右下角的单元格与左方单元格无法合并。经检验发现在该单元格分隔符"|"（也是表格的最后一个分隔符）后多加一个分隔符"|"即可解决问题</p>
 </li>
