@@ -10,7 +10,7 @@ index_page_size = 10
 archives_page_size = 20
 template = "Galileo"
 enable_jsdelivr = {
-    "enabled": True,
+    "enabled": False,
     "repo": "Kunwi/Myblog@gh-pages"
 }
 
