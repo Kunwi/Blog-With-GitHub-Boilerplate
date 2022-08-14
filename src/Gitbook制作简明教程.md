@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gitbook制作简明教程
+title: Gitbook制作及Github Pages发布简明教程
 slug: gitbook
 date: 2022-05-06 15:07
 status: publish
