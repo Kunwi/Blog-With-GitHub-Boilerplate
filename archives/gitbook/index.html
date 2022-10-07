@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/Myblog/4d0c281b3827b72786c18531776858ec.json"
+            api: "/Myblog/df8bdefde280e168a56e624a27266ce4.json"
         }
     </script>
     
@@ -277,7 +277,7 @@ git add .
 git commit -m "添加修改"
 git push</code></pre>
 <p><strong>8、  代码发布至gh-pages：</strong>在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：<code>gh-pages -d _book</code>，在Github中设置GitHub Page Source时指定gh-pages分支即可。</p>
-<p>**9、  更新gitbook代码时，执行前述7-d和8的步骤即可更新代码和静态网页。</p>
+<p><strong>9、  后续维护：</strong>gitbook代码有更新时，执行前述7-d和8的步骤即可更新代码和静态网页。</p>
 <h2>存在问题</h2>
 <ul>
 <li><p>表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来。 使用ideamean修改的版本即可解决，使用方法：修改book.json的plugins，将原数组项"auto-scroll-table"更改为"auto-scroll-table@git+<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git">https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git</a>" ，参见<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table/blob/master/README.MD">来源</a></p>
