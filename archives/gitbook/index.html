@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/Myblog/eb4417c7f0d4906bd31eedf7eacce38d.json"
+            api: "/Myblog/4d0c281b3827b72786c18531776858ec.json"
         }
     </script>
     
@@ -268,8 +268,8 @@ git remote add origin https.github.com/**/**.git
 git add .
 git commit -m "init commit"
 git push origin master</code></pre>
-<p>如失败，应确认登录状态，尝试能否克隆仓库，也可尝试<a href="https://blog.csdn.net/helllochun/article/details/48802473">创建ssh key</a>（Permission denied (publickey)），以及换个网络环境。
-后期修改代码内容可用以下命令推送修改：</p>
+<p>如失败，应确认登录状态，尝试能否克隆仓库，也可尝试<a href="https://blog.csdn.net/helllochun/article/details/48802473">创建ssh key</a>（Permission denied (publickey)），以及换个网络环境。</p>
+<p>d  后期修改代码内容可用以下命令推送修改：</p>
 
 <pre><code># cd 到仓库文件夹后
 
@@ -277,6 +277,7 @@ git add .
 git commit -m "添加修改"
 git push</code></pre>
 <p><strong>8、  代码发布至gh-pages：</strong>在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：<code>gh-pages -d _book</code>，在Github中设置GitHub Page Source时指定gh-pages分支即可。</p>
+<p>**9、  更新gitbook代码时，执行前述7-d和8的步骤即可更新代码和静态网页。</p>
 <h2>存在问题</h2>
 <ul>
 <li><p>表格列数过多时无法显示。可用auto-scroll-table表格滚动条插件解决，但该插件在第一次进入页面时经常无法加载，需要刷新页面后才能加载出来。 使用ideamean修改的版本即可解决，使用方法：修改book.json的plugins，将原数组项"auto-scroll-table"更改为"auto-scroll-table@git+<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git">https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git</a>" ，参见<a href="https://github.com/ideamean/gitbook-plugin-auto-scroll-table/blob/master/README.MD">来源</a></p>
@@ -297,7 +298,10 @@ git push</code></pre>
 | 1 | 2 |
 | 4 |   ||</code></pre>
 <ul>
-<li>book.json文件修改"plugins":[]参数时需注意，若修改前后插件数量不变，需保证排在第一行的插件有变化。否则执行gitbook install时系统会无法识别插件变化，无法安装。因此如有新增插件建议将其写在第一行。</li>
+<li><p>book.json文件修改"plugins":[]参数时需注意，若修改前后插件数量不变，需保证排在第一行的插件有变化。否则执行gitbook install时系统会无法识别插件变化，无法安装。因此如有新增插件建议将其写在第一行。</p>
+</li>
+<li><p>表格第一列文字无法自动换行，可用<br />手动换行。</p>
+</li>
 </ul>
 
             </div>
