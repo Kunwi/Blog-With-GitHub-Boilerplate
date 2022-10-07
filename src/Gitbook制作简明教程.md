@@ -251,7 +251,7 @@ git push
 
 **8、  代码发布至gh-pages：**在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：`gh-pages -d _book`，在Github中设置GitHub Page Source时指定gh-pages分支即可。
 
-**9、  更新gitbook代码时，执行前述7-d和8的步骤即可更新代码和静态网页。
+**9、  后续维护：**gitbook代码有更新时，执行前述7-d和8的步骤即可更新代码和静态网页。
 
 ##存在问题
 
