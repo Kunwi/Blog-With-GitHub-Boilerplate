@@ -239,7 +239,8 @@ git push origin master
 ```
 
 如失败，应确认登录状态，尝试能否克隆仓库，也可尝试[创建ssh key](https://blog.csdn.net/helllochun/article/details/48802473)（Permission denied (publickey)），以及换个网络环境。
-后期修改代码内容可用以下命令推送修改：
+
+d  后期修改代码内容可用以下命令推送修改：
 ```
 # cd 到仓库文件夹后
 
@@ -249,6 +250,8 @@ git push
 ```
 
 **8、  代码发布至gh-pages：**在Git Bash输入以下代码将静态页面HTML文件推送至gh-pages分支：`gh-pages -d _book`，在Github中设置GitHub Page Source时指定gh-pages分支即可。
+
+**9、  更新gitbook代码时，执行前述7-d和8的步骤即可更新代码和静态网页。
 
 ##存在问题
 
@@ -274,3 +277,5 @@ git push
 ```
 
 - book.json文件修改"plugins":[]参数时需注意，若修改前后插件数量不变，需保证排在第一行的插件有变化。否则执行gitbook install时系统会无法识别插件变化，无法安装。因此如有新增插件建议将其写在第一行。
+
+- 表格第一列文字无法自动换行，可用<br />手动换行。
