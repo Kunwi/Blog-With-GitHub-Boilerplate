@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/Myblog/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Fri, 07 Oct 2022 19:04:41 +0806</lastBuildDate><pubDate>Fri, 07 Oct 2022 19:04:41 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="/Myblog/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/Myblog/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Thu, 13 Oct 2022 15:31:15 +0806</lastBuildDate><pubDate>Thu, 13 Oct 2022 15:31:15 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="/Myblog/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
 （你能找到五岳独尊吗）&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;五岳归来不看山，黄山归来不看岳&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -260,7 +260,7 @@ git push&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;book.json文件修改"plugins":[]参数时需注意，若修改前后插件数量不变，需保证排在第一行的插件有变化。否则执行gitbook install时系统会无法识别插件变化，无法安装。因此如有新增插件建议将其写在第一行。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;表格第一列文字无法自动换行，可用&lt;br /&gt;手动换行。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;表格第一列文字无法自动换行，可用&lt;code&gt;&amp;lt;br /&amp;gt;&lt;/code&gt;手动换行。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 </description><author>seesgyy@gmail.com (Kunwi)</author><guid isPermaLink="true">/Myblog/archives/gitbook/</guid><pubDate>Fri, 06 May 2022 15:07:00 +0806</pubDate></item></channel></rss>
