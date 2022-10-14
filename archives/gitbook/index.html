@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/Myblog/cf25dcb4043e54ee2f8f635d3d6ecd0e.json"
+            api: "/Myblog/69e1fb13fc75a344b4651e5c73b883bc.json"
         }
     </script>
     
@@ -301,6 +301,8 @@ git push</code></pre>
 <li><p>book.json文件修改"plugins":[]参数时需注意，若修改前后插件数量不变，需保证排在第一行的插件有变化。否则执行gitbook install时系统会无法识别插件变化，无法安装。因此如有新增插件建议将其写在第一行。</p>
 </li>
 <li><p>表格第一列文字无法自动换行，可用<code>&lt;br /&gt;</code>手动换行。</p>
+</li>
+<li><p>除第一列以外的表格列宽可通过控制首行列宽来决定，可在标题行内容前后加空格符，中文汉字的一格需要四个空格符：<code>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</code>。也可通过<code>&lt;div style="width:[长度]"&gt;[单元格文本]&lt;/div&gt;</code> 的形式确定，长度单位可以是pt, px, cm等。参见<a href="https://zhuanlan.zhihu.com/p/93239297">来源</a></p>
 </li>
 </ul>
 
