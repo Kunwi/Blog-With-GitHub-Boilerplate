@@ -12,6 +12,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+    <loc>/Myblog/archives/随便乱写/</loc>
+    <lastmod>2023-01-22</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
     <loc>/Myblog/archives/gitbook/</loc>
     <lastmod>2022-05-06</lastmod>
     <changefreq>always</changefreq>
