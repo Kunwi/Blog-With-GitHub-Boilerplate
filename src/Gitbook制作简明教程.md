@@ -13,7 +13,7 @@ tags:
 
 本教程主要基于以下教程：[GitBook简介安装配置](https://gitbook.curiouser.top/origin/gitbook-%E7%AE%80%E4%BB%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html)，
 
-#环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, ph-pages）
+#环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, gh-pages）
 
 **1、  本教程使用环境：**64位win10 系统；
 
@@ -196,6 +196,7 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 **6、  构建gitbook书籍静态HTML资源：**首先在对应书籍目录下输入以下命令：`gitbook install`安装插件样式资源，其次输入以下命令：`gitbook build`,可见书籍的文件夹中生成一个 \_book 的文件夹, 里面有生成的静态HTML资源。
 
 **7、  代码托管到Github：**
+
 a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）
 
 b  构建.gitignore文件，忽略无需上传的文件。gitbook统一示例如下，可根据需求更改。
