@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/Myblog/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Sat, 21 Jan 2023 17:58:20 +0806</lastBuildDate><pubDate>Sat, 21 Jan 2023 17:58:20 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="/Myblog/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Kunwi's Blog</title><link>/Myblog/</link><description>Nothing in life is to be feared, it is only to be understood.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/Myblog/logo.png</url><title>Kunwi's Blog</title><link>/Myblog/</link></image><language>zh-CN</language><lastBuildDate>Sun, 22 Jan 2023 00:32:00 +0806</lastBuildDate><pubDate>Sun, 22 Jan 2023 00:32:00 +0806</pubDate><item><title>泰山曲阜游记</title><link>/Myblog/archives/Mount-Tai/</link><description>&lt;p&gt;&lt;figure style="flex: 37.5" &gt;&lt;img loading="lazy" width="1374" height="1832" src="/Myblog/archives/assets/9cec58c3688ebd9973b9f28ce80be6f9.jpg" /&gt;&lt;figcaption&gt;玉皇顶回望，远处是1935年落成的日观峰气象台  
 （你能找到五岳独尊吗）&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;&lt;p&gt;五岳归来不看山，黄山归来不看岳&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -41,7 +41,7 @@
 &lt;figure style="flex: 45.764462809917354" &gt;&lt;img loading="lazy" width="443" height="484" src="/Myblog/archives/assets/ba4cd830e670e686ce8dc781357a8582.jpg" /&gt;&lt;figcaption&gt;连禁止烟火都被做成了墓碑模样&lt;/figcaption&gt;&lt;/figure&gt;
 由于行程匆忙，山东之旅就在走马观花中匆匆结束了。在此要多谢泰安友人范氏的远程倾情介绍，给我的游览添了很多趣味。虽然范氏推荐的驴肉火烧没有吃到，奈何桥、冯玉祥墓、泰安老火车站以及壕气的政府也无缘得见了。下次有机会再来拜访。&lt;del&gt;下次一定&lt;/del&gt;&lt;/p&gt;
 </description><author>seesgyy@gmail.com (Kunwi)</author><guid isPermaLink="true">/Myblog/archives/Mount-Tai/</guid><pubDate>Wed, 03 Mar 2021 16:50:00 +0806</pubDate></item><item><title>Gitbook制作及Github Pages发布简明教程</title><link>/Myblog/archives/gitbook/</link><description>&lt;p&gt;本教程主要基于以下教程：&lt;a href="https://gitbook.curiouser.top/origin/gitbook-%E7%AE%80%E4%BB%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"&gt;GitBook简介安装配置&lt;/a&gt;，&lt;/p&gt;
-&lt;h1&gt;环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, ph-pages）&lt;/h1&gt;
+&lt;h1&gt;环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, gh-pages）&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;1、  本教程使用环境：&lt;/strong&gt;64位win10 系统；&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;2、  安装gitbook的使用环境Node.js：&lt;/strong&gt;gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装以及后续使用过程中可能会出现问题，需要额外的步骤解决，并不推荐。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;3、  安装电子书制作软件gitbook cli：&lt;/strong&gt;在cmd或Git Bash等命令行程序中输入以下命令：&lt;code&gt;npm install gitbook-cli -g&lt;/code&gt;
@@ -194,8 +194,8 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;可能有用的插件：back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条，解决方法见文末存在问题一节。）、lightbox为单击查看图片（实际体验不佳，图片显示在悬浮窗口中但没有放大。）。详见&lt;a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html"&gt;来源&lt;/a&gt;。table-cell-merge可实现合并单元格：在单元格中填入&amp;gt;表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见&lt;a href="https://www.npmjs.com/package/gitbook-plugin-table-cell-merge"&gt;项目说明&lt;/a&gt;。url-embed可嵌入动态内容，如地图，详见&lt;a href="https://github.com/basilvetas/gitbook-plugin-url-embed"&gt;来源&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;6、  构建gitbook书籍静态HTML资源：&lt;/strong&gt;首先在对应书籍目录下输入以下命令：&lt;code&gt;gitbook install&lt;/code&gt;安装插件样式资源，其次输入以下命令：&lt;code&gt;gitbook build&lt;/code&gt;,可见书籍的文件夹中生成一个 _book 的文件夹, 里面有生成的静态HTML资源。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;7、  代码托管到Github：&lt;/strong&gt;
-a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7、  代码托管到Github：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）&lt;/p&gt;
 &lt;p&gt;b  构建.gitignore文件，忽略无需上传的文件。gitbook统一示例如下，可根据需求更改。&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;# Node rules:

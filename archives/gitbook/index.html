@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/Myblog/d7f92cac17beddd43c7b00600a7302ad.json"
+            api: "/Myblog/faccaa1f79077e3453d3860dbe506168.json"
         }
     </script>
     
@@ -81,7 +81,7 @@
             </span>
             <div class="ga-content_body">
                 <p>本教程主要基于以下教程：<a href="https://gitbook.curiouser.top/origin/gitbook-%E7%AE%80%E4%BB%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html">GitBook简介安装配置</a>，</p>
-<h1>环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, ph-pages）</h1>
+<h1>环境搭建（Node.js, gitbook cli, Writage, Vscode, Git Bash, gh-pages）</h1>
 <p><strong>1、  本教程使用环境：</strong>64位win10 系统；</p>
 <p><strong>2、  安装gitbook的使用环境Node.js：</strong>gitbook 是一个基于Node.js的命令行工具，安装Node.js为首要任务。本教程使用的是v10.23.0版本。也可装最新版本，但在gitbook cli安装以及后续使用过程中可能会出现问题，需要额外的步骤解决，并不推荐。</p>
 <p><strong>3、  安装电子书制作软件gitbook cli：</strong>在cmd或Git Bash等命令行程序中输入以下命令：<code>npm install gitbook-cli -g</code>
@@ -234,8 +234,8 @@ gh-pages版本应选择3.0.0版本，新版本在使用时会报The “path” a
 }</code></pre>
 <p>可能有用的插件：back-to-top-button为回到顶部，chapter-fold为目录折叠，search-pro为高级搜索（需禁用默认的search和lunr插件）、splitter为侧边栏宽度调节、auto-scroll-table为表格滚动条（常需将页面刷新才能看到滚动条，解决方法见文末存在问题一节。）、lightbox为单击查看图片（实际体验不佳，图片显示在悬浮窗口中但没有放大。）。详见<a href="https://xxh422735676.github.io/gitbook-comments/gitbook%E6%8F%92%E4%BB%B6.html">来源</a>。table-cell-merge可实现合并单元格：在单元格中填入&gt;表示与右方相邻单元格合并，^表示与上方相邻单元格合并，空单元格则默认与左方单元格合并。可参见<a href="https://www.npmjs.com/package/gitbook-plugin-table-cell-merge">项目说明</a>。url-embed可嵌入动态内容，如地图，详见<a href="https://github.com/basilvetas/gitbook-plugin-url-embed">来源</a>。</p>
 <p><strong>6、  构建gitbook书籍静态HTML资源：</strong>首先在对应书籍目录下输入以下命令：<code>gitbook install</code>安装插件样式资源，其次输入以下命令：<code>gitbook build</code>,可见书籍的文件夹中生成一个 _book 的文件夹, 里面有生成的静态HTML资源。</p>
-<p><strong>7、  代码托管到Github：</strong>
-a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）</p>
+<p><strong>7、  代码托管到Github：</strong></p>
+<p>a  在Github中新建仓库，以书籍路径名称命名。（为统一，可在新建仓库前先将个人设置中分支的默认名字命名为master，如无修改则为main，后面代码也需相应修改）</p>
 <p>b  构建.gitignore文件，忽略无需上传的文件。gitbook统一示例如下，可根据需求更改。</p>
 
 <pre><code># Node rules:
